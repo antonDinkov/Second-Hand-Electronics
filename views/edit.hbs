@@ -1,0 +1,29 @@
+<section id="editPage">
+    <form id='editForm' method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" {{#if post.name}}value="{{post.name}}"{{/if}}>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" {{#if post.type}}value="{{post.type}}"{{/if}}>
+
+        <label for="production">Year of Production:</label>
+        <input type="number" id="production" name="production" {{#if post.production}}value="{{post.production}}"{{/if}}>
+
+        <label for="exploitation">Years of Exploitation:</label>
+        <input type="number" id="exploitation" name="exploitation" {{#if post.exploitation}}value="{{post.exploitation}}"{{/if}}>
+
+        <label for="damages">Damages:</label>
+        <input type="text" id="damages" name="damages" {{#if post.damages}}value="{{post.damages}}"{{/if}}>
+
+        <label for="image">Image:</label>
+        <input type="text" id="image" name="image" {{#if post.image}}value="{{post.image}}"{{/if}}>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" {{#if post.price}}value="{{post.price}}"{{/if}}>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" {{#if post.description}}value="{{post.description}}"{{/if}}>
+
+        <input type="submit" class="edit" value="Edit Offer">
+    </form>
+</section>
